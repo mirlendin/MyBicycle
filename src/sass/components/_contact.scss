@@ -1,0 +1,112 @@
+.contact {
+    background-color: #1D1D1D;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        font-family: 'Poppins';
+        font-weight: 500;
+        font-size: 64px;
+        line-height: 100%;
+        letter-spacing: -1.5px;
+        color: #FFFFFF;
+
+        margin-bottom: 48px;
+
+        @include onPhone {
+            font-size: 32px;
+        }
+
+        @include onDesktop {
+            font-size: 48px;
+            margin-bottom: 64px;
+        }
+    }
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        
+        margin-bottom: 112px;
+        gap: 24px;
+
+        @include onDesktop {
+            flex-direction: column;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        input {
+            background: #F8F8FA;
+            border-radius: 40px;
+
+            width: 411px;
+            height: 48px;
+            margin-bottom: 12px;
+
+            @include onDesktop {
+                width: 288px;
+            }
+
+        }
+        textarea {
+            background: #F8F8FA;
+            border-radius: 16px;
+            width: 411px;
+            height: 148px;
+            margin-bottom: 32px;
+
+            @include onDesktop {
+                width: 288px;
+            }
+        }
+
+        button {
+            background: #FFFFFF;
+            border-radius: 40px;
+
+            width: 411px;
+            height: 56px;
+
+            font-family: 'Poppins';
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 27px;
+
+            color: #1D1D1D;
+
+            @include onDesktop {
+                width: 288px;
+            }
+        }
+    }
+
+    .adress__type {
+        font-family: 'Poppins';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+        color: #FFFFFF;
+
+        margin: 0%;
+        padding: 8px;
+    }
+
+    .address__info {
+        font-family: 'Poppins';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 140%;
+
+        color: #FFFFFF;
+    }
+    
+}

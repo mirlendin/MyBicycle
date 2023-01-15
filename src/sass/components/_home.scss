@@ -78,6 +78,7 @@
         &__list{
             display: flex;
             justify-content: space-between;
+            width: 100%;
 
             @include onDesktop {
                 flex-direction: column;
@@ -103,6 +104,10 @@
 
             @include onDesktop {
                 max-width: 394px;
+            }
+
+            @include onPhone {
+                width: 280px;
             }
         }
     }                  
